@@ -1,7 +1,7 @@
 /*  ========== H02 - Guessing Game ============
  *
- *   Student: SOLUTION
- *   Semester:
+ *   Student: Chengyi Li
+ *   Semester: spring 2023
  *
  *   A simple guessing game program. This
  *   Uses a separate main file where system
