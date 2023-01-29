@@ -1,7 +1,7 @@
 /*  ========== H02 - Guessing Game ============
  *
- *   Student: UPDATE
- *   Semester: UPDATE
+ *   Student: Chengyi Li
+ *   Semester: spring 2023
  *
  * A simple guessing game program. 
  *
@@ -19,6 +19,8 @@
 /** add as many functions as you need 
  * remember good design practices 
 */
+
+
 
 
 /** Start location for the guessing game - this must
