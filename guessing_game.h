@@ -16,20 +16,19 @@
 #define MAX_RANDOM 10
 #define MIN_RANDOM 1
 
-/** add as many functions as you need 
- * remember good design practices 
-*/
-
+//this is meth for the frame.
 void frame() {
     printf("----------------------------------------------------\n");
 }
 
+// this is the entry for the game show welcome game.
 void welcome_guess() {
      frame();
      printf("|  Welcome to the Guessing Game. Let's get started.  |\n");
      frame();
 }
 
+//this is the main function for guessing game, to print and provide hint.
 int guess_hint(int x, int num1) {
     int guess;
     int num;
@@ -53,6 +52,7 @@ int guess_hint(int x, int num1) {
     return num + 1; // guess time is starting at 1 not 0.
 }
 
+// the main guessing game, to let the function run 5 times.
 int * guess() {
     int static guess_time[5];
     int i; 
@@ -66,6 +66,7 @@ int * guess() {
     return guess_time;
 }
 
+// to get how many run and time the guess use.
 void end_guessting(int *guess_time) {
     frame();
     printf("|              Result of the Rounds!              |\n");
