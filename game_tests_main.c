@@ -1,7 +1,7 @@
 /*  ========== H02 - Guessing Game ============
  *
- *   Student: UPDATE
- *   Semester: UPDATE
+ *   Student: Chengyi Li
+ *   Semester: Spring 2023
  *
  *   This file builds the foundation for a 'testing' framework for the game
  *   You will want to build unit tests in this file, and run them. 
@@ -15,11 +15,12 @@
 
 #include "guessing_game.h"  
 
-/** replace with your own unit tests / functions **/
+//in this test we test the guess_hint method.
 int test_one() {
-    // run a unit test
-
-    return 0; // if there weren't errors
+    int x = 8;
+    int y = guess_hint(x, x);
+    if (y == 1) return 0; //test pass.
+    return 1; // test didn't pass.
 }
 
 /** saves the random number seed out to a file,
@@ -34,8 +35,8 @@ int test_one() {
 void save_random(char *count_c) {
     char *end;
     long count = strtol(count_c, &end, 10);
-
-    for(int i = 0; i < count; i++) {
+    int i;
+    for(i = 0; i < count; i++) {
        printf("%d\n", rand() % MAX_RANDOM + MIN_RANDOM);
     }
 
