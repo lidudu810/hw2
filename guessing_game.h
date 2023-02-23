@@ -53,17 +53,26 @@ int guess_hint(int x, int num1) {
 }
 
 // the main guessing game, to let the function run 5 times.
-int * guess() {
+int * guess(int s) {
     int static guess_time[5];
     int i; 
+    int *guessround;
     for(i = 0; i < 5; i++) {
      frame();
      printf("|                     Round %d                     |\n", i + 1);
      frame();
      int x = rand() % 10 + 1;
      guess_time[i] = guess_hint(x, -1);
+     guessround = &i;
     }
-    return guess_time;
+    if (s == 0)
+    {
+        return guess_time;
+    }
+    else{
+        return guessround;
+    }
+    
 }
 
 // to get how many run and time the guess use.
@@ -85,7 +94,7 @@ int start_game()
 {
     int *guess_time;
     welcome_guess();
-    guess_time = guess();
+    guess_time = guess(0);
     end_guessting(guess_time);
     return 0; // returns 0 if game ran validly
 }

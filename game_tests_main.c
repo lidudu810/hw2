@@ -23,6 +23,13 @@ int test_one() {
     return 1; // test didn't pass.
 }
 
+//in this test we test the how many round in guess.
+int test_two() {
+    int *x = guess(1);
+    if (*x == 5) return 0; //test pass.
+    return 1; // test didn't pass.
+}
+
 /** saves the random number seed out to a file,
  * so it can be regenerated for testing purposes.
  *
@@ -81,6 +88,7 @@ int main(int argc, char *argv[]) {
     }else {
         int errors = 0;
         errors += test_one();
+        errors += test_two(); 
         // add more tests here
         printf("\n**Fail %d unit tests.**\n", errors);
         return 0; 
