@@ -20,5 +20,5 @@ one row per resource
 In the worst case, how many guesses would our guessing game take to get the right answer if we had no hints at all?
 in the worst case it would be 10 times.
 
-In the worst case, how many guesses does it take to get the right number if we get a hint of "higher or lower" when guessing numbers 1-10 and guess intelligently (always picking in the middle of the remaining set of numbers)? Hint: In your answer, show this mathematically with the log function.
-it would be 4 times, this is the binary guessing, because 2^3is 8, 8 is smaller than 10, 2^ is 16, 16 is bigger than 10, so in the worst case it would be 4 times.
+In the worst case, how many guesses does it take to get the right number if we get a hint of "higher or lower" when guessing numbers 1-10 and guess intelligently (always picking in the middle of the remaining set of numbers)? Hint: In your answer, show this mathematicalliy with the log function.
+it would be 4 times, because log2(8) = 3 and log2(16) = 4, 8 is smaller than 10, 16 is bigger than 10, so in the worst case it would be 4 times.
